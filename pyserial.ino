@@ -8,8 +8,8 @@ void setup(){
 void loop()
 {
   if (irrecv.decode(&results)) { 
-    int control_code = results.value;
-    Serial.println(control_code); //сообщить значение приема в монитор
-   irrecv.resume(); //возобновление работы ИК приемника
+     int control_code = results.value;
+    Serial.println(control_code);
+   irrecv.resume();
   }
 }
